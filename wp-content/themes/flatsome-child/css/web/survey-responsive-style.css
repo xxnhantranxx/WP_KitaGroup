@@ -1,0 +1,48 @@
+@media only screen and (max-width:1600px) {
+
+}
+
+@media only screen and (max-width:1366px) {
+    
+}
+
+@media only screen and (max-width:1170px) {}
+
+@media only screen and (max-width:850px) {}
+
+@media only screen and (max-width:800px) {
+
+}
+
+@media only screen and (max-width:680px) {}
+
+@media only screen and (max-width:550px) {
+    
+}
+
+@media only screen and (max-width:480px) {
+    .form-card-stripe .card-group > .w-50{
+        width: 100%;
+    }
+    .form-card-stripe .card-group > .w-25{
+        width: calc(50% - 12px);
+    }
+    #scroll-text{
+        font-size:24px;
+    }
+    .section8a .s8a-r1 .s8a-r1-c1{
+        padding-bottom:0 !important;
+    }
+    
+}
+
+@media only screen and (max-width:375px) {
+    .p-CardBrandIcons-item .p-CardBrandIcon{
+        width:32px;
+    }
+    .p-CardIcons .p-CardBrandIcons > .p-CardBrandIcons-item:not(.p-CardBrandIcons-more){
+        display: none;
+    }
+}
+
+@media only screen and (max-width:320px) {}

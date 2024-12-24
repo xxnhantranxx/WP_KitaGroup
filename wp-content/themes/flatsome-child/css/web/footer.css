@@ -1,0 +1,121 @@
+.absolute-footer {
+  display: none;
+}
+
+#footer .MyFooter {
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+#footer .MyFooter .section-bg {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px 32px 0px 0px;
+  background: #000;
+}
+
+.TopFooter {
+  margin-bottom: 60px;
+}
+
+.TopFooterC2 .InfoFooter ._2nkx:first-child {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #505050;
+}
+.TopFooterC2 .InfoFooter ._2nkx ._6yjs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.TopFooterC2 .InfoFooter ._2nkx ._6yjs img, .TopFooterC2 .InfoFooter ._2nkx ._6yjs i {
+  margin-right: 8px;
+  color: var(--Neutral-color-White, #FFF);
+}
+.TopFooterC2 .InfoFooter ._2nkx ._6yjs span {
+  color: var(--Neutral-color-White, #FFF);
+  font-family: Anybody;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.TopFooterC2 .InfoFooter ._2nkx ._9kpf {
+  color: var(--Neutral-color-BG-0, #E9E9DB);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.TopFooterC2 .InfoFooter ._2nkx ._1dgy {
+  color: var(--Neutral-color-BG-0, #E9E9DB);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title_widget h3 {
+  color: var(--Neutral-color-White, #FFF);
+  font-family: Anybody;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.menu_footer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -10px;
+}
+.menu_footer .menu-item {
+  width: calc(50% - 10px);
+  margin-right: 10px !important;
+}
+.menu_footer .menu-item a {
+  color: var(--Neutral-color-BG-0, #E9E9DB);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.menu_footer .menu-item a:hover {
+  color: #f1f1f1;
+}
+
+.BottomFooter {
+  border-top: 1px solid #505050;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.BottomFooter .BT1 .copyright {
+  margin-bottom: 0;
+  color: #ACACAC;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.BottomFooter .BT2 .right_text_footer {
+  text-align: right;
+}
+.BottomFooter .BT2 .right_text_footer p {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #ACACAC;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: flex-end;
+}
+.BottomFooter .BT2 .right_text_footer p img {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
