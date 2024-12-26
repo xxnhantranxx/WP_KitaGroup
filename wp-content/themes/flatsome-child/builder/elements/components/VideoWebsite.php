@@ -16,33 +16,12 @@ add_ux_builder_shortcode( 'VideoWebsite', array(
                     'heading' => 'Đường dẫn',
                     'full_width' => true,
                 ),
-                'text' => array(
-                    'type' => 'textarea',
-                    'heading' => 'Văn bản',
-                    'full_width' => true,
+                'img' => array(
+                    'type' => 'image',
+                    'heading' => __('Image'),
+                    'default' => ''
                 ),
             ),
-        ),
-        'button_options' => array(
-            'type' => 'group',
-            'heading' => __( 'Nút' ),
-            'options' => array(
-                'label' => array(
-                    'type' => 'textfield',
-                    'heading' => 'Nút',
-                    'full_width' => true,
-                ),
-                'link_button' => array(
-                    'type' => 'textfield',
-                    'heading' => 'Đường dẫn',
-                    'full_width' => true,
-                ),
-            ),
-        ),
-        'text_headding' => array(
-                    'type' => 'textarea',
-                    'heading' => 'Chữ dưới',
-                    'full_width' => true,
         ),
         'class' => array(
             'type' => 'textfield',

@@ -65,13 +65,13 @@ function prefix_add_footer_styles()
     wp_enqueue_script('checkout_js');
     wp_register_script('wowjs', get_stylesheet_directory_uri() . '/asset/js/wow.js');
     wp_enqueue_script('wowjs');
-    if ( is_checkout() ){
-        wp_register_script('intlTelInputWithUtils', get_stylesheet_directory_uri() . '/asset/js/intlTelInputWithUtils.min.js');
-        wp_enqueue_script('intlTelInputWithUtils');
+    // if ( is_checkout() ){
+    //     wp_register_script('intlTelInputWithUtils', get_stylesheet_directory_uri() . '/asset/js/intlTelInputWithUtils.min.js');
+    //     wp_enqueue_script('intlTelInputWithUtils');
 
-        wp_register_script('phoneInputWithUtils', get_stylesheet_directory_uri() . '/js/web/phoneInputWithUtils.js');
-        wp_enqueue_script('phoneInputWithUtils');   
-    }
+    //     wp_register_script('phoneInputWithUtils', get_stylesheet_directory_uri() . '/js/web/phoneInputWithUtils.js');
+    //     wp_enqueue_script('phoneInputWithUtils');   
+    // }
   wp_register_script('SwiperCustomize', get_stylesheet_directory_uri() . '/js/web/SwiperCustomize.js');
   wp_enqueue_script('SwiperCustomize');
   // wp_register_script('color', get_stylesheet_directory_uri() . '/js/web/color-change.js');

@@ -1,117 +1,60 @@
-/* font-family: "Mona Sans"; */
+/* font-family: "Montserrat"; */
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 300;
-  src: url(../../fonts/MonaSans/static/MonaSans-Light.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-Light.ttf);
 }
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 400;
-  src: url(../../fonts/MonaSans/static/MonaSans-Regular.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 500;
-  src: url(../../fonts/MonaSans/static/MonaSans-Medium.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 600;
-  src: url(../../fonts/MonaSans/static/MonaSans-SemiBold.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-SemiBold.ttf);
 }
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 700;
-  src: url(../../fonts/MonaSans/static/MonaSans-Bold.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-Bold.ttf);
 }
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 800;
-  src: url(../../fonts/MonaSans/static/MonaSans-Black.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-Black.ttf);
 }
 @font-face {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
   font-weight: 900;
-  src: url(../../fonts/MonaSans/static/MonaSans-ExtraBold.ttf);
+  src: url(../../fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
 }
-/* font-family: "Mona Sans Expanded"; */
+/* font-family: "UTM Times"; */
 @font-face {
-  font-family: "Mona Sans Expanded";
-  font-weight: 300;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-Light.ttf);
-}
-@font-face {
-  font-family: "Mona Sans Expanded";
+  font-family: "UTM Times";
   font-weight: 400;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-Regular.ttf);
+  src: url(../../fonts/UTM-Times/UTMTimes/UTMTimes.ttf);
 }
 @font-face {
-  font-family: "Mona Sans Expanded";
-  font-weight: 500;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-Medium.ttf);
-}
-@font-face {
-  font-family: "Mona Sans Expanded";
-  font-weight: 600;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-SemiBold.ttf);
-}
-@font-face {
-  font-family: "Mona Sans Expanded";
+  font-family: "UTM Times";
   font-weight: 700;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-Bold.ttf);
+  src: url(../../fonts/UTM-Times/UTMTimes/UTMTimesBold.ttf);
 }
+/* font-family: UTM Copperplate; */
 @font-face {
-  font-family: "Mona Sans Expanded";
-  font-weight: 800;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-Black.ttf);
-}
-@font-face {
-  font-family: "Mona Sans Expanded";
-  font-weight: 900;
-  src: url(../../fonts/MonaSansExpanded/MonaSansExpanded-ExtraBold.ttf);
-}
-/* font-family: Anybody; */
-@font-face {
-  font-family: Anybody;
-  font-weight: 300;
-  src: url(../../fonts/Anybody/static/Anybody-Light.ttf);
-}
-@font-face {
-  font-family: Anybody;
+  font-family: "UTM Copperplate";
   font-weight: 400;
-  src: url(../../fonts/Anybody/static/Anybody-Regular.ttf);
+  src: url(../../fonts/UTM-Copperplate/UTMCopperplate/UTMCopperplate.ttf);
 }
 @font-face {
-  font-family: Anybody;
-  font-weight: 500;
-  src: url(../../fonts/Anybody/static/Anybody-Medium.ttf);
-}
-@font-face {
-  font-family: Anybody;
-  font-weight: 600;
-  src: url(../../fonts/Anybody/static/Anybody-SemiBold.ttf);
-}
-@font-face {
-  font-family: Anybody;
+  font-family: "UTM Copperplate";
   font-weight: 700;
-  src: url(../../fonts/Anybody/static/Anybody-Bold.ttf);
-}
-@font-face {
-  font-family: Anybody;
-  font-weight: 800;
-  src: url(../../fonts/Anybody/static/Anybody-Black.ttf);
-}
-@font-face {
-  font-family: Anybody;
-  font-weight: 900;
-  src: url(../../fonts/Anybody/static/Anybody-ExtraBold.ttf);
-}
-/* font-family: "Anybody SemiExpanded"; */
-@font-face {
-  font-family: "Anybody SemiExpanded";
-  font-style: normal;
-  font-weight: normal;
-  src: url(../../fonts/AnybodySemiExpanded/Anybody[wdth\,wght].ttf);
+  src: url(../../fonts/UTM-Copperplate/UTMCopperplate/UTMCopperplateB.ttf);
 }
 body .heading {
   font-size: 64px;
@@ -169,7 +112,7 @@ body,
 .nav > li > a,
 .mobile-sidebar-levels-2 .nav > li > ul > li > a,
 .alt-font {
-  font-family: "Mona Sans";
+  font-family: "Montserrat";
 }
 
 .slick-list.draggable {

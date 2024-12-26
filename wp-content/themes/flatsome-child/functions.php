@@ -11,5 +11,5 @@ require_once('common/lightbox-form.php');
 require_once('common/shortcodes-customize.php');
 require_once('common/post-type.php');
 require_once('common/styles-global.php');
-require_once('common/woocommerce.php');
+// require_once('common/woocommerce.php');
 require_once('common/general.php');

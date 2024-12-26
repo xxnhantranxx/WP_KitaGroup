@@ -9,38 +9,35 @@ function Sun_SliderHero($atts, $content)
 ?>
     <div class="HomeBanner swiper <?php echo $class; ?>">
         <?php
-        $images = get_field('thu_vien_anh', 'option');
+        $images = get_field('gallery_section_7', 'option');
         // Check rows exists.
-        if( have_rows('thu_vien_anh', 'option') ):?>
+        if( have_rows('gallery_section_7', 'option') ):?>
         <div class="list_homeBanner swiper-wrapper aos-init">
             <?php 
             $totalPages = count($images); // Tính tổng số trang
+            $navData = []; // Mảng để lưu nội dung của nav_slide
             // Loop through rows.
-            while( have_rows('thu_vien_anh', 'option') ) : the_row();
+            while( have_rows('gallery_section_7', 'option') ) : the_row();
             // Load sub field value.
-            $image = get_sub_field('image', 'option');
-            $tieu_de = get_sub_field('tieu_de', 'option');
-            $description = get_sub_field('description', 'option');
-            $call_to_action = get_sub_field('call_to_action', 'option');
-            $link_cta = get_sub_field('link_cta', 'option');?>
+            $image_slide = get_sub_field('image_slide', 'option');
+            $nav_slide = get_sub_field('nav_slide', 'option');
+            $navData[] = $nav_slide; // Lưu nội dung vào mảng
+            ?>
             <div class="item_homeBanner swiper-slide">
-                    <div class="img_background">
-                        <img src="<?php echo $image; ?>">
-                    </div>
-                    <div class="_4wlf">
-                        <div class="_9ujj"><?php echo $tieu_de; ?></div>
-                        <div class="_1bsz"><?php echo $description; ?></div>
-                        <div class="_9kid">
-                            <a href="<?php echo $link_cta; ?>" class="button-flex button myButton">
-                                <span><?php echo $call_to_action; ?></span>
-                                <img src="<?php echo home_url(); ?>/wp-content/themes/flatsome-child/img/arrow_right.png">
-                            </a>
-                        </div>
-                    </div>
+                <div class="img_background">
+                    <img src="<?php echo $image_slide; ?>">
                 </div>
+            </div>
             <?php endwhile;?>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="_0wxo">
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="_0zzi">
+            <div class="_3wfv">Những đặc quyền danh giá kiến tạo</div>
+            <div class="_8cfx">GIA22 độc bản</div>
+            <div class="nhan-tran-pagination" data-nav="<?php echo htmlspecialchars(json_encode($navData)); ?>"></div>
+        </div>
     </div>
     <?php
     // No value.

@@ -27,8 +27,8 @@ function ButtonContactUs()
 {
   ob_start(); ?>
   <div class="header-button">
-    <a href="<?php echo home_url(); ?>/tai-khoan/" class="customize-button-contact">
-        <span>Đăng nhập</span>
+    <a href="<?php echo home_url(); ?>/#section_13" class="customize-button-contact">
+        <span>Liên hệ</span>
         <i class="fa-regular fa-arrow-up-right"></i>
     </a>
   </div>

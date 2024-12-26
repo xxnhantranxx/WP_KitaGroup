@@ -2,12 +2,11 @@
 function Rating($atts, $content)
 {
     extract(shortcode_atts(array(
-        'title' => '',
+        'class' => '',
     ), $atts));
     ob_start();
 ?>
-    <div class="rating">
-        <p class="h5 fw-bold"><?php echo $title; ?></p>
+    <div class="rating <?php echo $class; ?>">
         <ul class="list-rounded list-rating">
             <?php echo do_shortcode($content); ?>
         </ul>

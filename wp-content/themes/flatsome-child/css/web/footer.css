@@ -2,120 +2,78 @@
   display: none;
 }
 
-#footer .MyFooter {
-  padding-top: 45px;
-  padding-bottom: 0;
+.top_footer {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #a96f4a;
 }
-#footer .MyFooter .section-bg {
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 0);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 32px 32px 0px 0px;
-  background: #000;
-}
-
-.TopFooter {
-  margin-bottom: 60px;
-}
-
-.TopFooterC2 .InfoFooter ._2nkx:first-child {
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #505050;
-}
-.TopFooterC2 .InfoFooter ._2nkx ._6yjs {
+.top_footer .top_footer_r1_c1 .col-inner {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
 }
-.TopFooterC2 .InfoFooter ._2nkx ._6yjs img, .TopFooterC2 .InfoFooter ._2nkx ._6yjs i {
-  margin-right: 8px;
-  color: var(--Neutral-color-White, #FFF);
+.top_footer .top_footer_r1_c1 .col-inner a {
+  width: 50%;
 }
-.TopFooterC2 .InfoFooter ._2nkx ._6yjs span {
-  color: var(--Neutral-color-White, #FFF);
-  font-family: Anybody;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
+.top_footer .top_footer_r1_c1 .col-inner a .icon-box {
+  align-items: center;
 }
-.TopFooterC2 .InfoFooter ._2nkx ._9kpf {
-  color: var(--Neutral-color-BG-0, #E9E9DB);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.top_footer .top_footer_r1_c1 .col-inner a .icon-box p {
+  color: #a96f4a;
+  font-size: 20px;
 }
-.TopFooterC2 .InfoFooter ._2nkx ._1dgy {
-  color: var(--Neutral-color-BG-0, #E9E9DB);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.title_widget h3 {
-  color: var(--Neutral-color-White, #FFF);
-  font-family: Anybody;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.menu_footer {
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: -10px;
-}
-.menu_footer .menu-item {
-  width: calc(50% - 10px);
-  margin-right: 10px !important;
-}
-.menu_footer .menu-item a {
-  color: var(--Neutral-color-BG-0, #E9E9DB);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.menu_footer .menu-item a:hover {
-  color: #f1f1f1;
-}
-
-.BottomFooter {
-  border-top: 1px solid #505050;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.BottomFooter .BT1 .copyright {
-  margin-bottom: 0;
-  color: #ACACAC;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.BottomFooter .BT2 .right_text_footer {
+.top_footer .top_footer_r1_c1 .col-inner a:last-child {
   text-align: right;
 }
-.BottomFooter .BT2 .right_text_footer p {
+.top_footer .top_footer_r1_c1 .col-inner a:last-child .icon-box {
+  justify-content: end;
+}
+.top_footer .top_footer_r1_c1 .col-inner a:last-child .icon-box .icon-box-text {
+  flex: unset;
+}
+
+.bottom_footer .bottom_footer_c1 img {
+  width: auto;
+}
+
+.customize_footer .s4_r1 .block_text_footer_r1 h2 {
+  color: #a96f4a;
+  font-family: "UTM Copperplate";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.customize_footer .s4_r1 .block_text_footer_r2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+.customize_footer .s4_r1 .block_text_footer_r2 .text-icon {
   margin-bottom: 0;
   display: flex;
   align-items: center;
-  color: #ACACAC;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  justify-content: flex-end;
+  color: #d7ad72;
 }
-.BottomFooter .BT2 .right_text_footer p img {
-  margin-bottom: 0;
-  margin-left: 10px;
+.customize_footer .s4_r1 .block_text_footer_r2 .text-icon i {
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d7ad72;
+  font-size: 12px;
+  color: #333;
+}
+.customize_footer .stack_isocal {
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.customize_footer .stack_isocal .img img {
+  width: 55px;
+  height: 55px;
 }
