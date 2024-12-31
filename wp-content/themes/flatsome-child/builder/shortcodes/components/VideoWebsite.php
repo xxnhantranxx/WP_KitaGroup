@@ -10,12 +10,14 @@ function VideoWebsite($atts, $content)
 ?>
     <div class="VideoWebsite <?php echo $class; ?>">
         <div class="banner-video">
-            <img class="_7pyy" src="<?php echo wp_get_attachment_image_url($img,'full'); ?>">
-            <div class="video-button-wrapper">
-                <a href="<?php echo $link; ?>" class="button open-video icon circle is-outline is-xlarge">
+                <video class="_6alu video-hero" preload playsinline muted>
+                    <source src="<?php echo $link; ?>" type="video/mp4">
+                </video>
+            <!-- <div class="video-button-wrapper">
+                <a href="javascript:void(0)" class="_1blk button icon circle is-outline is-xlarge">
                     <i class="icon-play"></i>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 <?php

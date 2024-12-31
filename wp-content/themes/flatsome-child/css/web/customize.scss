@@ -24,14 +24,21 @@
             }
         }
     }
+    .video-hero{
+        width: 100%;
+        height: 100%;
+        // max-height: calc(100vh - 70px);
+        object-fit: cover;
+    }
 }
 .section_3{
+    margin-top: -10px;
     .s3_slide{
         position: relative;
         &::after{
             content: "";
             position: absolute;
-            width: 55%;
+            width: 600px;
             height: 100%;
             left: 0;
             top: 0;
@@ -47,8 +54,9 @@
         z-index: 1;
         width: 100%;
         top: 50%;
-        left: 160px;
+        left: 60px;
         transform: translateY(-50%);
+        margin-top: 0 !important;
         .image_logo_s3 {
             img{
                 width: 130px;
@@ -97,10 +105,11 @@
             font-family: "UTM Times";
             font-size: 30px;
             font-style: italic;
-            background: linear-gradient(#b6805d, #edbf91);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            // background: linear-gradient(#b6805d, #edbf91);
+            // -webkit-background-clip: text;
+            // background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            color: #eabc8e;
             line-height: 38px;
             margin-bottom: 15px;
             text-align: center;
@@ -114,10 +123,11 @@
                 margin-bottom: 0;
                 display: flex;
                 align-items: center;
-                background: linear-gradient(#b6805d, #edbf91);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+                // background: linear-gradient(#b6805d, #edbf91);
+                // -webkit-background-clip: text;
+                // background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                color: #fff;
                 font-size: 16px;
                 font-weight: 500;
                 justify-content: center;
@@ -160,12 +170,22 @@
     }
     .s5_r2_c2 {
         .col-inner,
+        ._0jdg,
+        ._2pjn,
+        .ContentSeclect5thumb,
+        ._6kbg,
+        ._1dfp,
+        ._0jdg,
         .img ,
         .img-inner{
             height: 100%;
             img{
                 height: 100%;
             }
+        }
+        .col-inner{
+            border-radius: 15px;
+            overflow: hidden;
         }
     }
 }
@@ -226,19 +246,27 @@
                             font-weight: 400;
                             line-height: 1.3;
                         }
-                    }
-                    &:last-child{
-                        &::after{
-                            content: " ";
-                            height: 100%;
-                            right: 0;
-                            position: absolute;
-                            top: 0;
-                            border-right: 1px dashed #5e1237;
-                            left: unset;
-                            border-bottom: unset;
+                        img{
+                            height: 55px;
+                            width: auto;
+                            margin: 0;
+                            margin-top: 10px;
+                            display: block;
+                            float: unset;
                         }
                     }
+                    // &:last-child{
+                    //     &::after{
+                    //         content: " ";
+                    //         height: 100%;
+                    //         right: 0;
+                    //         position: absolute;
+                    //         top: 0;
+                    //         border-right: 1px dashed #5e1237;
+                    //         left: unset;
+                    //         border-bottom: unset;
+                    //     }
+                    // }
                 }
             }
         }
@@ -254,7 +282,7 @@
         &::after{
             content: "";
             position: absolute;
-            width: 55%;
+            width: 600px;
             height: 100%;
             right: 0;
             top: 0;
@@ -267,13 +295,14 @@
                 img{
                     height: calc(100vh - 70px);
                     width: 100%;
+                    object-fit: cover;
                 }
             }
         }
         ._0zzi {
             position: absolute;
             max-width: 450px;
-            right: 150px;
+            right: 40px;
             top: 50%;
             transform: translateY(-50%);
             z-index: 2;
@@ -288,7 +317,7 @@
             ._8cfx{
                 font-family: "UTM Copperplate";
                 font-size: 50px;
-                text-align: center;
+                text-align: left;
                 margin-bottom: 30px;
                 line-height: 1.3;
                 background: linear-gradient(#b57f5d, #edbf91);
@@ -305,7 +334,7 @@
                 position: absolute;
                 width: 1px;
                 height: calc(100% - 50px);
-                background: #fff1de;
+                background: transparent;
                 left: -5px;
                 top: 50%;
                 transform: translate(0, -50%);
@@ -351,15 +380,17 @@
             }
         }
         ._0wxo{
-            position: absolute;
-            z-index: 2;
-            width: 100%;
-            bottom: 30px;
-            left: 170px;
             .swiper-pagination{
                 display: flex;
                 align-items: center;
                 gap: 5px;
+                height: 7px;
+                width: max-content;
+                position: absolute;
+                z-index: 2;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
                 .bullet{
                     cursor: pointer;
                     display: block;
@@ -505,7 +536,7 @@
                 .img_background{
                     img{
                         width: 100%;
-                        height: calc(100vh - 70px);
+                        // height: calc(100vh - 70px);
                         object-fit: cover;
                     }
                 }
@@ -521,12 +552,16 @@
         ._5gvw{
             img{
                 border-radius: 8px;
+                height: 100px;
+                width: 100%;
+                object-fit: cover;
             }
         }
         ._4rdu{
             .swiper-button-next,
             .swiper-button-prev{
-                transform: translateY(20px);
+                bottom: 25px;
+                top: unset;
                 &::after{
                     font-size: 30px;
                     color: #fff4f0;
@@ -542,7 +577,26 @@
         ._6anf{
             color: #ffe9b1;
             font-weight: 600;
+            font-size: 20px;
+        }
+        ._2kql{
+            color: #ffffff;
             margin-bottom: 20px;
+            font-size: 16px;
+        }
+    }
+}
+#main .section_11{
+    .SubSlide11 {
+        .swiper-wrapper{
+            top: -2px;
+            ._1fee {
+                cursor: pointer;
+                opacity: .5;
+                &.swiper-slide-thumb-active{
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -550,7 +604,30 @@
     padding-top: 60px;
     padding-bottom: 30px;
     .Sun_SlideCard {
-        padding-bottom: 30px;
+        /* Đảm bảo slider chiếm 100% chiều rộng và trung tâm */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Slide mặc định */
+        .swiper-slide {
+            width: 817px; /* Độ rộng từng slide (tùy chỉnh theo thiết kế) */
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        /* Slide trung tâm */
+        .swiper-slide-active {
+            transform: scale(1.5); /* Tăng kích thước slide trung tâm */
+            z-index: 10; /* Đưa lên phía trước */
+        }
+        
+        /* Slide hai bên (hiển thị một chút) */
+        .swiper-slide:nth-child(2),
+        .swiper-slide:nth-last-child(2) {
+            transform: scale(0.8); /* Làm nhỏ slide hai bên */
+        }
+        padding-bottom: 50px;
         ._4gxe {
             position: relative;
             background: #fff;
@@ -581,6 +658,7 @@
                     line-height: 1.3;
                     font-weight: 700;
                     text-align: center;
+                    text-transform: uppercase;
                 }
                 ._8ehk{
                     font-size: 14px;
@@ -617,7 +695,7 @@
         margin-bottom: 0;
         ._4nua{
             background: #fff4f0e7;
-            padding: 80px;
+            padding:40px 60px;
             border-radius: 40px;
             ._7tbb{
                 ._9pkj{

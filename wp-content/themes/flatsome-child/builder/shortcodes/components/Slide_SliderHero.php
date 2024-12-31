@@ -37,15 +37,19 @@ function Slide_SliderHero($atts, $content)
             <div class="_5frj col large-12 RemovePaddingBottom">
                 <div class="col-inner">
                 <div class="_6qfc SubSlide11 swiper">
-                    <div class="_5tno"><div id="activeHeading" class="_6anf"></div></div>
+                    <div class="_5tno">
+                        <div id="activeHeading" class="_6anf"></div>
+                        <div id="activeContent" class="_2kql"></div>
+                    </div>
                     <div class="_3dqb swiper-wrapper">
                             <?php 
                             while( have_rows('gallery_image_11', 'option') ) : the_row();
                             // Load sub field value.
                             $image_sub_slide = get_sub_field('image_s11', 'option');
                             $heading_s11 = get_sub_field('heading_s11', 'option');
+                            $content_s11 = get_sub_field('content_s11', 'option');
                             ?>
-                            <div class="_1fee swiper-slide" data-heading="<?php echo $heading_s11; ?>">
+                            <div class="_1fee swiper-slide" data-heading="<?php echo $heading_s11; ?>" data-content="<?php echo $content_s11; ?>">
                                 <div class="_5gvw">
                                     <img src="<?php echo $image_sub_slide; ?>">
                                 </div>

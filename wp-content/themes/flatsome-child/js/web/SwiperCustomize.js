@@ -11,10 +11,10 @@ var HomeBanner = new Swiper(".HomeBanner", {
         prevEl: '.swpier_prj-prev',
     },
     grabCursor: true,
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     // freeMode: true,
     pagination: {
         el: ".nhan-tran-pagination",
@@ -100,6 +100,10 @@ var SubSlide11 = new Swiper(".SubSlide11", {
     spaceBetween: 15,
     slidesPerView: 6,
     slideToClickedSlide: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -123,33 +127,59 @@ var MainSlide11 = new Swiper(".MainSlide11", {
     loop: true,
     spaceBetween: 0,
     effect: "fade",
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+    autoHeight: true,
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     thumbs: {
       swiper: SubSlide11,
     },
 });
-// Cập nhật nội dung tiêu đề khi slide thay đổi
-SubSlide11.on('slideChange', function () {
-    // Lấy slide đang active
+
+
+// Cập nhật tiêu đề khi slide thay đổi
+SubSlide11.on('transitionEnd', function () {
     var activeSlide = document.querySelector('.SubSlide11 .swiper-slide-active');
     if (activeSlide) {
-        // Lấy tiêu đề từ thuộc tính data-heading
         var heading = activeSlide.getAttribute('data-heading');
-        // Cập nhật nội dung ra bên ngoài
         document.getElementById('activeHeading').textContent = heading || '';
+
+        var content = activeSlide.getAttribute('data-content');
+        document.getElementById('activeContent').textContent = content || '';
     }
 });
 
 // Hiển thị tiêu đề ban đầu khi trang tải
 document.addEventListener('DOMContentLoaded', function () {
-    var initialSlide = document.querySelector('.SubSlide11 .swiper-slide-active');
-    if (initialSlide) {
-        var initialHeading = initialSlide.getAttribute('data-heading');
-        document.getElementById('activeHeading').textContent = initialHeading || '';
-    }
+    setTimeout(function () {
+        var initialSlide = document.querySelector('.SubSlide11 .swiper-slide-active');
+        if (initialSlide) {
+            var initialHeading = initialSlide.getAttribute('data-heading');
+            document.getElementById('activeHeading').textContent = initialHeading || '';
+
+            var initialContent = initialSlide.getAttribute('data-content');
+            document.getElementById('activeContent').textContent = initialContent || '';
+        }
+    }, 1500); // Delay nhẹ để Swiper khởi tạo xong
+});
+
+// Lắng nghe sự kiện click trên mỗi slide
+document.querySelectorAll('.SubSlide11 .swiper-slide').forEach(function (slide) {
+    slide.addEventListener('click', function () {
+        // Lấy tiêu đề từ thuộc tính data-heading của slide được click
+        var heading = this.getAttribute('data-heading');
+        // Cập nhật nội dung ra phần tử #activeHeading
+        document.getElementById('activeHeading').textContent = heading || '';
+
+        var content = this.getAttribute('data-content');
+        // Cập nhật nội dung ra phần tử #activeHeading
+        document.getElementById('activeContent').textContent = content || '';
+    });
 });
 
 var Sun_SlideCard = new Swiper(".Sun_SlideCard", {
@@ -157,21 +187,59 @@ var Sun_SlideCard = new Swiper(".Sun_SlideCard", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
+    slidesPerView: "auto", // Điều chỉnh để các slide bên ngoài chỉ hiện ra một phần
+    slideToClickedSlide: true,
+    coverflowEffect: {
+        rotate: 0,
+        stretch:150, // Khoảng cách các slide gần lại
+        depth: 200, // Tạo chiều sâu, làm nổi bật slide trung tâm
+        modifier: 3, // Tăng kích thước tương đối của slide trung tâm
+        slideShadows: true, // Bật bóng cho các slide
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+var SubSlide11 = new Swiper(".ContentSeclect5", {
+    loop: true,
+    spaceBetween: 15,
     slidesPerView: 2,
     slideToClickedSlide: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: { 
+            slidesPerView: 1,
+            spaceBetween: 3,
+        },
+        768: { 
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1024: { 
+            slidesPerView: 2,
+            spaceBetween: 15, 
+        },
+    },
+});
+var MainSlide11 = new Swiper(".ContentSeclect5thumb", {
+    loop: true,
+    spaceBetween: 0,
+    effect: "fade",
+    autoHeight: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
     },
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 40,
-      depth: 100,
-      modifier: 2,
-      slideShadows: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    thumbs: {
+      swiper: SubSlide11,
     },
 });

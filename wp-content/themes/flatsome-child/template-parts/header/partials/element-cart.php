@@ -54,7 +54,6 @@ if(is_woocommerce_activated() && flatsome_is_wc_cart_available() ) {
   <?php } ?>
 </span>
 <?php } ?>
-
 <?php
 if($custom_cart_icon) { ?>
   <span class="image-icon header-cart-icon" data-icon-label="<?php echo WC()->cart->get_cart_contents_count(); ?>">

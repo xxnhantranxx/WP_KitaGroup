@@ -6,3 +6,4 @@ require_once __DIR__ . '/components/Rating.php';
 require_once __DIR__ . '/components/ItemRating.php';
 require_once __DIR__ . '/components/Slide_SliderHero.php';
 require_once __DIR__ . '/components/SlideCard.php';
+require_once __DIR__ . '/components/ContentSeclect5.php';
